@@ -1,6 +1,6 @@
 #include "Automata.h"
 
-Automata::Automata(std::vector<std::pair<std::string, unsigned int>>& products) {
+Automata::Automata(const std::vector<std::pair<std::string, unsigned int>>& products) {
     state = State::OFF;
     cash = 0;
     this->products = products;

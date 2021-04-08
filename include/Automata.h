@@ -12,17 +12,17 @@ enum class State {
 
 class Automata {
 public:
-	Automata(std::vector<std::pair<std::string, unsigned int>>& products);
-	void on(); // включение автомата;
-	void off(); // выключение автомата;
-	void coin(unsigned int); // занесение денег на счёт пользователем;
-	std::vector<std::pair<std::string, unsigned int>> getMenu(); // считывание меню с напитками и ценами для пользователя;
-	State getState(); // считывание текущего состояния для пользователя;
-	bool choice(unsigned int); // выбор напитка пользователем;
-	bool check(unsigned int); // проверка наличия необходимой суммы;
-	unsigned int cancel(); // отмена сеанса обслуживания пользователем;
-	void cook(); // имитация процесса приготовления напитка;
-	unsigned int finish(); // завершение обслуживания пользователя.
+	Automata(const std::vector<std::pair<std::string, unsigned int>>& products);
+	void on(); 
+	void off(); 
+	void coin(unsigned int); 
+	std::vector<std::pair<std::string, unsigned int>> getMenu(); 
+	State getState(); 
+	bool choice(unsigned int);
+	bool check(unsigned int);
+	unsigned int cancel();
+	void cook(); 
+	unsigned int finish(); 
 private:
 	State state;
 	std::vector<std::pair<std::string, unsigned int>> products;
