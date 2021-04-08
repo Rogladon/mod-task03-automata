@@ -1,6 +1,5 @@
 #include <gtest/gtest.h>
 #include "Automata.h"
-#include "Automata.cpp"
 
 std::vector<std::pair<std::string, unsigned int>> products(){
     std::vector<std::pair<std::string, unsigned int>> products{ {"Tea",10},{"Cofe", 20},{"Milk",15} };
